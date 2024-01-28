@@ -1,0 +1,10 @@
+.info {
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+}
+.info > h3 {
+    color: black;
+    margin: auto;
+    padding: 0px 10px;
+}
