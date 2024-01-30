@@ -1,8 +1,11 @@
-function Info() {
+function Info(props) {
+
+    const tag = props.tag
+
     return (
         <>
             <div className="info">
-                <h3>Status: vivo</h3>
+                <h3>{tag.tag}</h3>
             </div>
         </>
     )

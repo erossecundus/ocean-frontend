@@ -1,4 +1,11 @@
+#root {
+    width: 100%;
+}
+
 .cards {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    padding: 16px;
 }
