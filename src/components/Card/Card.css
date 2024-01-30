@@ -5,6 +5,7 @@
     box-shadow: 5px 5px;
     text-align: center;
     cursor: pointer;
+    margin: 2em;
 }
   
 .card > h2 {
@@ -18,7 +19,9 @@
 
 .infos {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 10px;
+    gap: 8px;
+    margin-bottom: 24px;
+    max-width: 300px;
+    justify-content: center;
 }

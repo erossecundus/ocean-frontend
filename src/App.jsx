@@ -1,13 +1,15 @@
 import './components/Card/Card.css'
 import Card from './components/Card/Card'
-import './components/Card/Info/Info.css'
-import Info from './components/Card/Info/Info'
+import './App.css'
 
 function App() {
   return (
     <>
+    <div className="cards">
       <Card />
       <Card />
+    </div>
+      
     </>
   )
 }
