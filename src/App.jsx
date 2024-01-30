@@ -30,7 +30,7 @@ function App() {
       <Card item={item3} />
       <Card item={item4} /> */}
 
-      {itens.map(item => <Card item={item} />)}
+      {itens.map((item,i) => <Card item={item} key={i} />)}
     </div>
       
     </>
