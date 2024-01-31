@@ -1,5 +1,5 @@
-import './Info/Info.css'
-import Info from './Info/Info'
+import './Tag/Tag.css'
+import Tag from './Tag/Tag'
 
 function Card(props) {
   //console.log(props)
@@ -8,14 +8,16 @@ function Card(props) {
   //console.log(props)
 
   const tag1 = {
-    tag: 'Status: Vivo'
+    text: 'Status: Vivo'
   }
   const tag2 = {
-    tag: 'Espécie: Humano'
+    text: 'Espécie: Humano'
   }
   const tag3 = {
-    tag: 'Origem: Terra C-137'
+    text: 'Origem: Terra C-137'
   }
+
+  const tags = [tag1, tag2, tag3]
     
 
   return (
@@ -23,9 +25,7 @@ function Card(props) {
           <div className="card">
             <h2>{item.name}</h2>
             <div className="infos">
-              <Info tag={tag1}/>
-              <Info tag={tag2}/>
-              <Info tag={tag3}/>
+              {tags.map((tag,i) => <Tag tag={tag} key={i}/>)}
             </div>
             <img src={item.image} />
           </div>
