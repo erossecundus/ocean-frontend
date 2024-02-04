@@ -28,37 +28,49 @@ function App() {
   //carregamento de dado via API
   
   const [itens, setItens] = useState([])
-  
-  async function carregarDadosApi() {
-    const apiURL = 'https://rickandmortyapi.com/api/character/'
+  const pageIni = 1
+  console.log(pageIni)
+
+  async function carregarDadosApi(pageIni) {
+    const page = pageIni
+
+    const apiURL = 'https://rickandmortyapi.com/api/character/?page=' + page
     
     // preparar requisição
     const response = await fetch(apiURL)
-
-    //console.log(response)
     
     const body = await response.json()
+    // console.log(body)
 
     const results = body.results
     console.log(results)
 
     setItens(results)
-
   }
 
   useEffect(function () {
-    carregarDadosApi()   
+    carregarDadosApi(pageIni)   
   }, [])
+
+  // document.addEventListener('scroll', function () {
+  //   if (window.scrollY > '100'){
+  //     carregarDadosApi(pageIni + 1)
+  //   }   
+  // }, [])
+  // console.log(pageIni)
 
 
   return (
     <>
     <div className="cards">
       {itens.map((item,i) => <Card item={item} key={i} />)}
+
     </div>
-      
+    
     </>
   )
+
+  
 }
 
 export default App

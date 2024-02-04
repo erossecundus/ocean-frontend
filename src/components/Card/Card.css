@@ -1,4 +1,7 @@
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     border: 1px solid white;
     border-radius: 12px;
     padding: 20px;
@@ -17,7 +20,7 @@
     border-radius: 10px;
 }
 
-.infos {
+.tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
