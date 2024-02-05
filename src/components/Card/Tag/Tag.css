@@ -1,6 +1,7 @@
 .tag {
-    background-color: white;
-    border-radius: 10px;
+    background: white;
+    box-shadow: 4px 4px 3px rgb(190, 190, 190) inset;
+    border-radius: 13px;
 }
 .tag > h3 {
     color: black;

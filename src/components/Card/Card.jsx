@@ -8,7 +8,7 @@ function Card(props) {
   // console.log('aqui o item' + item)
 
   const tag = [
-    'Name: ' + props.item.status,
+    'Status: ' + props.item.status,
     'Species: ' + props.item.species,
     'Origin: ' + props.item.origin.name
   ]

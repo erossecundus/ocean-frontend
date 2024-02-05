@@ -13,7 +13,8 @@
   
 .card > h2 {
     font-size: 32px;
-    border-left: 6px solid deeppink;
+    margin-top: 4px;
+    border-top: 4px solid deeppink;
 }
   
 .card > img {
